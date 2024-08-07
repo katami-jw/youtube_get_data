@@ -6,7 +6,7 @@ st.title("Youtubeチャンネル調査")
 st.write("気になるYouTubeチャンネルのチャンネルIDを入力してチャンネルの情報を見てみましょう")
 
 with st.form("チャンネル情報を検索"):
-    api_key=st.text_input('APIキー')
+    api_key=st.text_input('APIキー',type='password')
     channel_id=st.text_input('チャンネルID')
     submitted=st.form_submit_button('Submit')
 
